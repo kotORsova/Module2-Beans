@@ -1,5 +1,7 @@
-package org.example;
+package org.example.configuration;
 
+import org.example.main.Parrot;
+import org.example.main.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -7,24 +9,16 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class ProjConf {
     @Bean
-    @Primary
-    Parrot parrot1() {
+    public Parrot parrot() {
         Parrot p = new Parrot();
-        p.setName("Kesha");
-        return p;
-    }
-
-    @Bean("stepa")
-    Parrot parrot2() {
-        Parrot p = new Parrot();
-        p.setName("Stepa");
+        p.setName("Gosha");
         return p;
     }
 
     @Bean
-    Parrot parrot3() {
-        Parrot p = new Parrot();
-        p.setName("Jora");
+    public Person person() {
+        Person p = new Person();
+        p.setName("Kesha");
         return p;
     }
 }

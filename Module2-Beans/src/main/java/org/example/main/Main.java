@@ -1,5 +1,6 @@
-package org.example;
+package org.example.main;
 
+import org.example.configuration.ProjConf;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
