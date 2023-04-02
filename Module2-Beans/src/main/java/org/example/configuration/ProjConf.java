@@ -19,6 +19,7 @@ public class ProjConf {
     public Person person() {
         Person p = new Person();
         p.setName("Kesha");
+        p.setParrot(parrot());
         return p;
     }
 }
